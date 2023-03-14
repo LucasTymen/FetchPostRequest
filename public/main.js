@@ -1,5 +1,5 @@
 // Information to reach API
-const apiKey = '<Your API Key>';
+const apiKey = 'f8bbb1715cfe40459267b8d86d0b7695';
 const url = 'https://api.rebrandly.com/v1/links';
 
 // Some page elements
@@ -9,7 +9,8 @@ const responseField = document.querySelector('#responseField');
 
 // Asynchronous functions
 const shortenUrl = () => {
-
+  const urlToShorten = inputField.value;
+  const data = JSON.stringify({destination: urlToShorten});
 }
 
 // Clear page and call Asynchronous functions
